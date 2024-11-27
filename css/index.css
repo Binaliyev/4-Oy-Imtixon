@@ -1,24 +1,57 @@
+@font-face {
+    font-family: "Edu";
+    src: url("/assets/fonts/EduAUVICWANTArrows-VariableFont_wght.ttf");
+}
 
-*::before, *::after, *{
+*::before,
+*::after,
+* {
     margin: 0;
     padding: 0;
     font-size: 20px;
+    font-family: "Edu";
+    list-style: none;
 }
-body{
+
+body {
     box-sizing: border-box;
     background: rgba(0, 0, 0, 0.861);
 }
-.container{
+
+.container {
     width: 1440px;
     margin-inline: auto;
 }
-button, input{
+
+.logo-navbar-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #fcfc02;
+    padding-top: 2rem;
+}
+
+.store-logo-title {
+    font-size: 50px;
+    color: #fcfc02;
+}
+
+.btn-link-box {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button,
+input {
     border-radius: 10px;
     background: #fcfc02;
-    padding-inline:1rem;
+    padding-inline: 1rem;
     padding-block: 0.2rem;
 }
-.auth-form{
+
+.auth-form {
     width: 25%;
     border: 2px solid #fcfc02;
     border-radius: 10px;
@@ -27,21 +60,27 @@ button, input{
     margin-block: 10rem;
     text-align: center;
 }
-.auth-form>input, .auth-form>button{
+
+.auth-form>input,
+.auth-form>button {
     display: block;
     margin-block: 2rem;
     margin-inline: auto;
 }
-.auth-form>h1{
+
+.auth-form>h1 {
     color: #fcfc02;
     font-size: 50px;
 }
-.auth-form>a{
+
+.auth-form>a,
+.store-link-btn {
     color: #fcfc02;
 }
-.js-error-alert{
+
+.js-error-alert {
     width: 100%;
-    height: 4rem ;
+    height: 4rem;
     border-radius: 10px;
     background: red;
     color: white;
@@ -51,4 +90,55 @@ button, input{
     justify-content: space-between;
     margin-top: 1rem;
 }
-.d-none{display: none;}
+
+.d-none {
+    display: none;
+}
+.producs-list{
+    margin-block: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products-item{
+    width: 300px;
+    height: 23.5rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 #fcfc02, 0 6px 20px 0 #fcfc01;
+    border-radius: 10px;
+    margin-block: 1rem;
+}
+.product-img{
+    width: 100%;
+    height: 10rem;
+}
+.product-name{
+    font-size: 30px;
+    margin-block: 5px;
+    color: #fcfc02;
+}
+.product-description{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+.product-price{
+    background: blue;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.product-btn-box{
+    margin-block: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.store-icon{
+    width: 25px;
+    height: 20px;
+}
